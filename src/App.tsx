@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FC } from 'react';
+import { Todo, Trash } from 'components';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { Tabs, TabsProps } from 'antd';
+
+const items: TabsProps['items'] = [
+	{
+		key: '1',
+		label: 'Todo List',
+		children: <Todo />,
+	},
+	{
+		key: '2',
+		label: 'Trash',
+		children: <Trash />,
+	},
+];
+
+const App: FC = () => (
+	<>
+		<div className='wrapper'>
+			<div className='wrapper__container'>
+				<Tabs defaultActiveKey='1' items={items} />
+			</div>
+		</div>
+	</>
+);
 
 export default App;

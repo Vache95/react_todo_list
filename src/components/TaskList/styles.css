@@ -1,0 +1,43 @@
+.task-list {
+    height: 500px;
+    padding: 0 10px 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    & :not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .task-item {
+        overflow: hidden;
+
+        .ant-card-extra {
+            & :not(:last-child) {
+                margin-right: 12px;
+            }
+        }
+    }
+}
+
+@media(max-width:550px) {
+    .task-list {
+        padding: 0 10px 300px;
+    }
+
+    .task-item {
+        .ant-card-head-wrapper {
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ant-card-head-title {
+            order: 2;
+        }
+
+        .ant-card-extra {
+            order: 1;
+            margin-left: unset;
+        }
+    }
+}

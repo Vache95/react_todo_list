@@ -1,0 +1,25 @@
+.form-modal {
+    &> :not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .edit__title {
+        position: relative;
+    }
+
+    .edit_error {
+        color: var(--accent-red);
+        font-size: 12px;
+        position: absolute;
+        z-index: 999;
+        top: 32px;
+        left: 0px;
+    }
+
+    .edit__datepicker {
+
+        .ant-picker {
+            width: 100%;
+        }
+    }
+}

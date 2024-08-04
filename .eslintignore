@@ -1,0 +1,12 @@
+node_modules
+build
+.eslintrc.js
+.gitignore
+.env.jest.js
+i18n.ts
+vite.config.ts
+vite-env.d.ts
+codegen.ts
+src/apollo/graphql/**/*.tsx
+src/apollo/graphql/**/*.ts
+**/types/**/*

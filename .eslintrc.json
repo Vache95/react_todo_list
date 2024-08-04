@@ -1,0 +1,53 @@
+{
+    "plugins": [
+        "simple-import-sort",
+        "prettier"
+    ],
+    "extends": [
+        "react-app",
+        "prettier"
+    ],
+    "rules": {
+        "simple-import-sort/imports": [
+            "warn",
+            {
+                "groups": [
+                    [
+                        "^next",
+                        "^react",
+                        "^pages",
+                        "^layouts",
+                        "^routers",
+                        "^hoc",
+                        "^components",
+                        "^@reduxjs",
+                        "^hooks",
+                        "^store",
+                        "^constants",
+                        "^utils",
+                        "^helpers",
+                        "^services",
+                        "^urls",
+                        "^axios",
+                        "^lib",
+                        "^types",
+                        "^assets",
+                        "^.+\\.s?css$"
+                    ]
+                ]
+            }
+        ],
+        "prettier/prettier": [
+            "warn",
+            {
+                "printWidth": 120,
+                "semi": true,
+                "jsxSingleQuote": true,
+                "singleQuote": true,
+                "useTabs": true,
+                "arrowParens": "avoid",
+                "endOfLine": "lf"
+            }
+        ]
+    }
+}

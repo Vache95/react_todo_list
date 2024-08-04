@@ -1,0 +1,33 @@
+.trash {
+    padding: 0 10px 50px;
+
+    h1 {
+        color: var(--accent-blue);
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .trash-list {
+        height: 460px;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        & :not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        .ant-card-extra {
+            & :not(:last-child) {
+                margin-right: 12px;
+            }
+        }
+    }
+}
+
+@media(max-width:550px) {
+
+    .trash-list {
+        padding-bottom: 100px;
+    }
+}

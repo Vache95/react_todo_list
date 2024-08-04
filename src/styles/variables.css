@@ -1,0 +1,10 @@
+:root {
+    --accent-white: #fff;
+    --accent-black: #000;
+    --accent-red: #EB0028;
+    --accent-blue: rgb(30, 30, 227);
+    --accent-gray-10: #f6f6f6;
+    --accent-gray-20: #f1f1f1;
+    --accent-gray-30: #888;
+    --accent-gray-40: #555;
+}

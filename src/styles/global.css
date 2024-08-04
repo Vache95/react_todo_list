@@ -1,0 +1,44 @@
+@import './variables.css';
+@import './normalize.css';
+
+
+.wrapper {
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+[class*="__container"] {
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: var(--accent-gray-10);
+}
+
+/* scroll */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: var(--accent-gray-20);
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-gray-30);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-gray-40);
+}
