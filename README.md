@@ -12,4 +12,4 @@ yarn start
 
 ## Deploy Link
 
-`Todo List` : <>
+`Todo List` : <https://animated-pony-2f352c.netlify.app/>
